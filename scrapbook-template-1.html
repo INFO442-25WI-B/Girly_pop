@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Collage Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbeaec;
+            margin: 0;
+            padding: 0;
+            color: #5a3e36;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #d8a48f;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            padding: 15px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .nav-left h1 {
+            margin: 0;
+            color: white;
+            font-size: 24px;
+        }
+
+        .scrapbook {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        #photoContainer {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+        .photo {
+            position: absolute;
+            width: 150px;
+            height: auto;
+            border: 2px solid #d8a48f;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="nav-left">
+                <h1>Scrapbook Hub</h1>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </div>
+    <div class="scrapbook">
+        <h2>Random Collage Template</h2>
+        <input type="file" id="photoInput" multiple accept="image/*">
+        <div id="photoContainer"></div>
+    </div>
+    <script>
+        document.getElementById('photoInput').addEventListener('change', function(event) {
+            const files = event.target.files;
+            const container = document.getElementById('photoContainer');
+            
+            for (let file of files) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.classList.add('photo');
+                    img.style.left = `${Math.random() * 80}%`;
+                    img.style.top = `${Math.random() * 80}%`;
+                    img.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
+                    container.appendChild(img);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
