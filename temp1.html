@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbook Collage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body-1">
+    <div class="page" style= "max-width: 400px; height: 480px;">
+
+        <div class="ticket-container" style="top: px; left: 240px;">
+            <div class="ticket">
+                <div class="ticket-title">Ticket for One</div>
+                <div class="ticket-destination" contenteditable="true">Seattle → Portland</div>
+                <div class="ticket-info" contenteditable="true">Departure: 10:30 AM, March 5</div>
+            </div>
+        </div>
+        
+        <div class="polaroid" style="top: 180px; left: 255px; transform: rotate(-4deg);">
+            <img id="photo1" src="photo1.jpg" alt="Photo 1">
+            <input type="file" id="upload1" class="file-input">
+            <div class="caption" contenteditable="true">caption here</div>
+        </div>
+        
+        <div class="stamp" style="top: 22px; left: 300px; transform: rotate(5deg);"> 
+            <img id="photo2" src="photo2.jpg" alt="Photo 2">
+            <input type="file" id="upload2" class="file-input">
+        </div>
+        
+        <div class="photo" style="top: 145px; left: 10px; width: 200px; height: 130px; transform: rotate(-5deg);">
+            <img id="photo3" src="photo3.jpg" alt="Photo 3">
+            <div class="tape"></div>
+            <input type="file" id="upload3" class="file-input">
+        </div>    
+        <div class="photo" style="top: 290px; left: 30px; width: 200px; height: 130px; transform: rotate(6deg);">
+                <img id="photo4" src="photo4.jpg" alt="Photo 4">
+                <div class="tape"></div>
+                <input type="file" id="upload4" class="file-input">
+        </div>      
+        <h1 id="scrapbook-title"
+        style="position: absolute; bottom:20px; right: 30px;"
+        class="scrapbook-title" contenteditable="true">My Scrapbook</h1>
+    </div>
+    <script src="scripts.js"></script> 
+</body>
+</html>
