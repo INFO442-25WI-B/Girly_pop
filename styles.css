@@ -166,3 +166,174 @@ footer {
 .scrapbook-card:hover {
     transform: translateY(-5px);
 }
+
+
+@font-face {
+    font-family: 'MagazineLetter';
+    src: url('fonts/MagazineLetterByBrntlbrnl-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'LoveStruck';
+    src: url('fonts/Demo Love Struck-Regular.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FreshPalm';
+    src: url('fonts/Fresh Palm.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.freshpalm-textbox {
+    font-family: 'FreshPalm', cursive;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    min-height: 50px;
+    text-align: center;
+    position: absolute;
+}
+
+.lovestruck-textbox {
+    font-family: 'LoveStruck', cursive;
+    font-size: 12px;
+    color: #5a3e36;
+    padding: 10px;
+    width: 30%;
+    min-height: 30px;
+    text-align: center;
+    position: absolute;
+}
+
+.scrapbook-title {
+    font-family: 'MagazineLetter', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #5a3e36;
+    margin-bottom: 20px;
+    cursor: text;
+    outline: none;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    }
+
+            
+.body-1 {
+    background-color: #f8c8dc;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.page {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    height: 390px;
+    background: #c4a484;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+.photo {
+    width: 140px;
+    height: 140px;
+    background: white;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tape {
+    width: 60px;
+    height: 20px;
+    background: rgba(234, 191, 159, 0.8);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg);
+    opacity: 0.8;
+}
+.polaroid {
+    width: 160px;
+    background: white;
+    padding: 15px 15px 25px 15px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.polaroid img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    background-color: #ddd;
+}
+.polaroid input {
+    margin-top: 10px;
+    width: 90%;
+    border: none;
+    background: none;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+}
+.file-input {
+    margin-top: 10px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+.caption {
+    margin-top: 18px;
+    width: 90%;
+    min-height: 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #5a3e36;
+    background: none;
+    outline: none;
+    border: none;
+    opacity: 0.7;
+}
+.sticky-note {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #ffdcf2;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; 
+    word-wrap: break-word;
+    z-index: 100;
+}
+
