@@ -1,7 +1,13 @@
 # Girly_pop
-Digital scrapbook or something creative using mostly front end Members: Beliz, Halle, Gina, Pranathi
+
+Digital Scrapbook Web App!
+
+Beliz, Halle, Gina, Pranathi
 
 Instructions:
+-View live site here - 
+
+Or 
 -Git clone to laptop
 -Run index.html file
 
