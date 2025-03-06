@@ -12,6 +12,7 @@ body {
 /* Navbar */
 .header {
     position: fixed;
+    font-family: Arial, sans-serif;
     top: 0;
     width: 100%;
     background-color: #d8a48f;

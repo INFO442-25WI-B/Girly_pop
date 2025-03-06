@@ -33,3 +33,38 @@ document.addEventListener('DOMContentLoaded', function () {
     handleImageUpload("upload6", "photo6");
 
 });
+
+/* Temp 3 js */
+document.addEventListener('DOMContentLoaded', function () {
+    const profileIcon = document.querySelector('.profile-icon');
+    
+    profileIcon.addEventListener('click', function() {
+        alert('You clicked the profile icon!');
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const photos = document.querySelectorAll(".photo-frame");
+
+    photos.forEach((photo) => {
+        const img = photo.querySelector("img");
+        const fileInput = photo.querySelector(".file-input");
+
+        
+        photo.addEventListener("click", function () {
+            fileInput.click();
+        });
+
+        
+        fileInput.addEventListener("change", function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    img.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+});
