@@ -5,5 +5,5 @@ Instructions:
 -Git clone to laptop
 -Run index.html file
 
-Write-up:
+Justification, Requirements, and Architecture:
 https://docs.google.com/document/d/1FBHdnJ8Agz-qRbYWTzYO2MbXwTpOB0yJ6eDLZsvdSEo/edit?usp=sharing
