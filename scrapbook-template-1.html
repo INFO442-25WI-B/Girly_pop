@@ -15,6 +15,7 @@
             padding-top: 80px;
         }
 
+       /* Navbar */
         .header {
             position: fixed;
             top: 0;
@@ -37,6 +38,44 @@
             margin: 0;
             color: white;
             font-size: 24px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #a86b5a;
+        }
+
+        .profile-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-icon {
+            font-size: 24px;
+            color: white;
+            border-radius: 50%;
+            padding: 8px 12px;
+            background-color: #5a3e36;
+            cursor: pointer;
+        }
+
+        .profile-icon:hover {
+            background-color: #a86b5a;
         }
 
         .scrapbook {
@@ -67,15 +106,20 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="navbar">
+    <header class="header">
+        <nav class="navbar">
             <div class="nav-left">
                 <h1>Scrapbook Hub</h1>
             </div>
             <div class="nav-right">
-                <a href="index.html">Home</a>
+                <a href="create-scrapbook.html" class="nav-link">Create a Scrapbook</a>
+                <a href="scrapbook-archive.html" class="nav-link">My Scrapbooks</a>
+                <a href="profile.html" class="profile-link">
+                    <div class="profile-icon">👤</div>
+                </a>
             </div>
-        </div>
+        </nav>
+    </header>
     </div>
     <div class="scrapbook">
         <h2>Random Collage Template</h2>
