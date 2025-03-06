@@ -103,6 +103,21 @@
         .photo:hover {
             transform: scale(1.1);
         }
+        .upload-btn {
+            background-color: #ff99c8;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .upload-btn:hover {
+            background-color: #e57ba0;
+        }
     </style>
 </head>
 <body>
@@ -125,6 +140,7 @@
         <h2>Random Collage Template</h2>
         <input type="file" id="photoInput" multiple accept="image/*">
         <div id="photoContainer"></div>
+        <button class="upload-btn" onclick="alert('Scrapbook Saved!')">Save Scrapbook</button>
     </div>
     <script>
         document.getElementById('photoInput').addEventListener('change', function(event) {
