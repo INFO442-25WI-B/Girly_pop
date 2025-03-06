@@ -90,19 +90,23 @@ body {
 /* Template Links */
 .template-link {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #f9c74f;
-    color: #fff;
+    padding: 16px 30px;
+    background-color: #f8b4b4;
+    color: #5a3e36;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 16px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    text-align: center;
 }
 
 .template-link:hover {
-    background-color: #f9844a;
+    background-color: #f28e8e; 
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
